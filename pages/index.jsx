@@ -58,8 +58,8 @@ export default function Home() {
   />
 </div>
 
-        {/* TÍTULO PRINCIPAL EN ORO */}
-        <h1 style={{ 
+        {/* {/* TÍTULO PRINCIPAL EN ORO 
+         <h1 style={{ 
           fontSize: '2.8rem', 
           fontWeight: 'normal', 
           letterSpacing: '3px', 
@@ -68,7 +68,7 @@ export default function Home() {
           fontFamily: 'serif' 
         }}>
           CERTAMEN SENIOR & SILVER
-        </h1>
+        </h1> */}
 
         {/* SUBTÍTULOS */}
         <h2 style={{ fontSize: '1.4rem', fontWeight: '300', color: '#C5A059', margin: '0 0 5px 0' }}>
