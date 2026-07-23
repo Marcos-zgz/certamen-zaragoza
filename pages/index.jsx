@@ -38,7 +38,7 @@ export default function Home() {
         {/* CORONA DORA CENTRADA */}
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
           <img 
-            src="/assets/corona.png" 
+            src="/assets/logocertamen.JPG" 
             alt="Corona Real" 
             style={{ width: '180px', height: 'auto', filter: 'drop-shadow(0px 5px 15px rgba(212, 175, 55, 0.4))' }} 
           />
