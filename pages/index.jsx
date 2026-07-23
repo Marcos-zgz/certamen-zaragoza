@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <div style={{ backgroundColor: '#111111', minHeight: '100vh', color: '#EAE6DF', margin: 0, padding: 0, fontFamily: 'sans-serif', scrollBehavior: 'smooth' }}>
       <Head>
-        <title>Mayka Menacho</title>
+        <title>Certamen de Zaragoza 2027</title>
       </Head>
 
       <Nav />
