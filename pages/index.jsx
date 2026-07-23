@@ -48,7 +48,7 @@ export default function Home() {
     src="/assets/logocertamen.jpg" // O la ruta exacta de la imagen del certamen
     alt="Certamen Senior & Silver Corona" 
     style={{ 
-      width: '80%',            // En móviles ocupará el 80% del ancho
+      width: '95%',            // En móviles ocupará el 80% del ancho
       maxWidth: '350px',       // En pantallas grandes no se hará gigante
       height: 'auto', 
       display: 'block',
