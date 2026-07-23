@@ -155,19 +155,20 @@ export default function Home() {
             </div>
           </div>
 
-         {/* QR ENMARCADO EN DORADO Y TINTADO */}
-<div style={{ backgroundColor: '#D4AF37', padding: '3px', borderRadius: '4px', display: 'inline-block' }}>
+      {/* QR EN ORO BRILLANTE (SIN DEFORMACIONES) */}
+<div style={{ display: 'inline-block' }}>
   <img 
-    src="https://api.qrserver.com/v1/create-qr-code/?size=70x70&data=https://maykamenacho.com&color=131210&bgcolor=D4AF37" 
+    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maykamenacho.com" 
     alt="QR Mayka Menacho" 
-    style={{ width: '60px', height: '60px', display: 'block' }} 
+    style={{ 
+      width: '60px', 
+      height: '60px', 
+      display: 'block',
+      // Este filtro invierte los colores y aplica el tono dorado exacto
+      filter: 'invert(72%) sepia(58%) saturate(452%) hue-rotate(5deg) brightness(95%) contrast(88%)'
+    }} 
   />
-
-            {/* Nombre/Firma */}
-            <span style={{ fontSize: '1.5rem', fontFamily: 'cursive', color: '#D4AF37' }}>
-              Mayka Menacho
-            </span>
-          </div>
+</div>
 
         </div>
 
