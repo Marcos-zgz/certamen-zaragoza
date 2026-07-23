@@ -2,7 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // ESTO ES LO QUE SALVARÁ EL DESPLIEGUE:
+  output: 'export', // <--- ESTA LÍNEA ES OBLIGATORIA PARA CLOUDFLARE PAGES
+  images: {
+    unoptimized: true, // Evita fallos con la optimización de imágenes estáticas
+  },
+  // Mantengo tus reglas para ignorar errores en el build:
   eslint: {
     ignoreDuringBuilds: true,
   },
