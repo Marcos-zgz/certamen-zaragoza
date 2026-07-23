@@ -162,7 +162,7 @@ export default function Home() {
     alt="QR Mayka Menacho" 
     style={{ width: '60px', height: '60px', display: 'block' }} 
   />
-</div>
+
             {/* Nombre/Firma */}
             <span style={{ fontSize: '1.5rem', fontFamily: 'cursive', color: '#D4AF37' }}>
               Mayka Menacho
