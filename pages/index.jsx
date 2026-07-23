@@ -147,7 +147,7 @@ export default function Home() {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#D4AF37', fontSize: '1.1rem' }}>
               <span>✉️</span>
-              <a href="mailto:mayka.morteroyal@gmail.com" style={{ color: '#D4AF37', textDecoration: 'none' }}>mayka.morteroyal@gmail.com</a>
+              <a href="mailto:maykamenacholopez@gmail.com" style={{ color: '#D4AF37', textDecoration: 'none' }}>maykamenacholopez@gmail.com</a>
             </div>
           </div>
 
