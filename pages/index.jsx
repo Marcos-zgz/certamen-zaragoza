@@ -11,7 +11,7 @@ export default function Home() {
     { t: "CANALIZACIÓN A DISTANCIA", d: "Conecta con tus guías, seres queridos o tu esencia interior. Informe detallado o audio personalizado.", p: "/canalizacion" },
     { t: "REGISTROS AKÁSHICOS", d: "Viaje al pasado para sanar el presente y entender tu historia.", p: "/regresiones" },
     { t: "REGRESIONES", d: "Accede a la memoria universal de tu alma para obtener claridad, sanación y propósito.", p: "/registros" },
-    { t: "ANÁLISIS DE SUEÑOS", d: "Descifra el lenguaje de tu subconsciente y sus mensajes ocultos.", p: "/suenos" },
+    { t: "ANÁLISIS DE SUEÑO", d: "Descifra el lenguaje de tu subconsciente y sus mensajes ocultos.", p: "/suenos" },
     { t: "TERAPIA DEL DUELO", d: "Acompañamiento compasivo en procesos de pérdida y transición.", p: "/duelo" }
   ];
 
