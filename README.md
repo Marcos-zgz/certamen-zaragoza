@@ -11,7 +11,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Deployment :zap:
 - Deployed on Vercel
-- Vercel for analyticss
+- Vercel for analyticsss
 - https://example-portfolio-template.vercel.app/
 
 ![example-portfolio-screenshot](https://user-images.githubusercontent.com/115713394/213791000-483d129a-bf0e-4893-9558-bfadeb1d7646.png)
