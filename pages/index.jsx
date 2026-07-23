@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import Nav from "../components/nav";
 import Image from "next/image";
-import Script from "next/script";
 
 export default function Home() {
   const servicios = [
@@ -26,53 +25,82 @@ export default function Home() {
   ];
 
   return (
-    <div style={{ backgroundColor: '#111111', minHeight: '100vh', color: '#EAE6DF', margin: 0, padding: 0, fontFamily: 'sans-serif', scrollBehavior: 'smooth' }}>
+    <div style={{ backgroundColor: '#131210', minHeight: '100vh', color: '#EAE6DF', margin: 0, padding: 0, fontFamily: 'serif', scrollBehavior: 'smooth' }}>
       <Head>
-        <title>Certamen de Zaragoza 2027</title>
+        <title>Certamen Senior & Silver | Mayka Menacho</title>
       </Head>
 
       <Nav />
-      
-      <main style={{ maxWidth: '1100px', margin: '0 auto', paddingTop: '140px', paddingLeft: '20px', paddingRight: '20px' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '40px' }}>
-          
-          <div style={{ width: '100%', maxWidth: '300px' }}>
-            <Image 
-              src="/assets/logo_mayka.png" 
-              alt="Logo Mayka Menacho" 
-              width={300} 
-              height={300} 
-              priority
-              style={{ borderRadius: '50%', border: '2px solid #D4AF37' }}
-            />
-          </div>
 
-          <div style={{ maxWidth: '700px' }}>
-            <p style={{ fontSize: '1.4rem', lineHeight: '1.6', color: '#F3E5AB', fontStyle: 'italic' }}>
-              "Libera tu esencia, sana tu historia y diseña el futuro que mereces: Cree, Crea y Crece"
+      {/* CABECERA PRINCIPAL (HERO) */}
+      <header style={{ maxWidth: '1200px', margin: '0 auto', paddingTop: '120px', paddingLeft: '20px', paddingRight: '20px', textAlign: 'center' }}>
+        
+        {/* CORONA DORA CENTRADA */}
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+          <img 
+            src="/assets/corona.png" 
+            alt="Corona Real" 
+            style={{ width: '180px', height: 'auto', filter: 'drop-shadow(0px 5px 15px rgba(212, 175, 55, 0.4))' }} 
+          />
+        </div>
+
+        {/* TÍTULO PRINCIPAL EN ORO */}
+        <h1 style={{ 
+          fontSize: '2.8rem', 
+          fontWeight: 'normal', 
+          letterSpacing: '3px', 
+          color: '#D4AF37', 
+          margin: '0 0 10px 0',
+          fontFamily: 'serif' 
+        }}>
+          CERTAMEN SENIOR & SILVER
+        </h1>
+
+        {/* SUBTÍTULOS */}
+        <h2 style={{ fontSize: '1.4rem', fontWeight: '300', color: '#C5A059', margin: '0 0 5px 0' }}>
+          In Zaragoza, Spain – Organizado por Mayka Menacho
+        </h2>
+        <p style={{ fontSize: '1.1rem', color: '#B39250', margin: '0 0 60px 0', fontStyle: 'italic' }}>
+          Delegada Regional de Aragón, Navarra y La Rioja
+        </p>
+
+        {/* SECCIÓN QUIÉNES SOMOS (TEXTO A LA IZQUIERDA + 2 IMÁGENES A LA DERECHA) */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', alignItems: 'center', justifyContent: 'space-between', textAlign: 'left', marginBottom: '80px' }}>
+          
+          <div style={{ flex: '1', minWidth: '300px' }}>
+            <h3 style={{ fontSize: '2rem', color: '#D4AF37', letterSpacing: '2px', marginBottom: '20px', fontWeight: 'normal' }}>
+              QUIÉNES SOMOS
+            </h3>
+            <p style={{ fontSize: '1rem', lineHeight: '1.7', color: '#D0C8B8', marginBottom: '20px' }}>
+              "Libera tu esencia, sana tu historia y diseña el futuro que mereces: Cree, Crea y Crece". Un espacio único diseñado para celebrar la elegancia, la experiencia y la madurez.
+            </p>
+            <p style={{ fontSize: '1rem', lineHeight: '1.7', color: '#D0C8B8' }}>
+              Nuestro certamen reúne el talento y la presencia de candidatos de Aragón, Navarra y La Rioja en un evento inolvidable lleno de distinción.
             </p>
           </div>
 
-          <div style={{ width: '100%', maxWidth: '500px' }}>
-            <img 
-              src="/assets/mayka.jpg" 
-              alt="Mayka Menacho" 
-              style={{ width: '100%', borderRadius: '20px', border: '1px solid #D4AF37', boxShadow: '0 10px 30px rgba(212, 175, 55, 0.15)' }}
-            />
+          <div style={{ flex: '1', minWidth: '320px', display: 'flex', gap: '20px', justifyContent: 'center' }}>
+            <div style={{ border: '1px solid #C5A059', padding: '4px', borderRadius: '4px' }}>
+              <img src="/assets/mayka.jpg" alt="Certamen Pareja" style={{ width: '100%', maxWidth: '220px', height: '260px', objectFit: 'cover' }} />
+            </div>
+            <div style={{ border: '1px solid #C5A059', padding: '4px', borderRadius: '4px' }}>
+              <img src="/images/mayka2.jpg" alt="Certamen Grupo" style={{ width: '100%', maxWidth: '220px', height: '260px', objectFit: 'cover' }} />
+            </div>
           </div>
+
         </div>
-      </main>
+      </header>
 
       {/* SECCIÓN SERVICIOS */}
-      <section id="servicios" style={{ maxWidth: '1100px', margin: '0 auto', padding: '100px 20px' }}>
-        <h2 style={{ fontSize: '1.8rem', fontWeight: 'bold', marginBottom: '50px', textAlign: 'center', letterSpacing: '2px', color: '#D4AF37' }}>SERVICIOS</h2>
+      <section id="servicios" style={{ maxWidth: '1200px', margin: '0 auto', padding: '60px 20px' }}>
+        <h2 style={{ fontSize: '2rem', fontWeight: 'normal', marginBottom: '40px', textAlign: 'center', letterSpacing: '3px', color: '#D4AF37' }}>SERVICIOS</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '30px' }}>
           {servicios.map((s, i) => (
-            <div key={i} style={{ padding: '30px 20px', backgroundColor: '#1A1A1A', borderRadius: '8px', textAlign: 'center', boxShadow: '0 10px 20px rgba(0,0,0,0.5)', border: '1px solid #D4AF37' }}>
-              <h3 style={{ fontSize: '1rem', marginBottom: '15px', fontWeight: 'bold', color: '#F3E5AB' }}>{s.t}</h3>
-              <p style={{ fontSize: '0.9rem', lineHeight: '1.5', color: '#EAE6DF', marginBottom: '25px' }}>{s.d}</p>
+            <div key={i} style={{ padding: '30px 20px', backgroundColor: '#1A1916', borderRadius: '4px', textAlign: 'center', border: '1px solid #C5A059' }}>
+              <h3 style={{ fontSize: '1.1rem', marginBottom: '15px', color: '#D4AF37', fontWeight: 'normal' }}>{s.t}</h3>
+              <p style={{ fontSize: '0.9rem', lineHeight: '1.6', color: '#C0B8A8', marginBottom: '25px' }}>{s.d}</p>
               <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <a href={s.p} style={{ backgroundColor: '#D4AF37', color: '#111111', padding: '8px 20px', borderRadius: '50px', textDecoration: 'none', fontSize: '0.75rem', fontWeight: '700' }}>SABER MÁS</a>
+                <a href={s.p} style={{ backgroundColor: '#D4AF37', color: '#131210', padding: '8px 22px', borderRadius: '20px', textDecoration: 'none', fontSize: '0.75rem', fontWeight: 'bold', letterSpacing: '1px' }}>SABER MÁS</a>
               </div>
             </div>
           ))}
@@ -80,73 +108,65 @@ export default function Home() {
       </section>
 
       {/* SECCIÓN TESTIMONIOS */}
-      <section id="testimonios" style={{ maxWidth: '1100px', margin: '0 auto', padding: '100px 20px' }}>
-        <h2 style={{ fontSize: '1.8rem', fontWeight: 'bold', marginBottom: '50px', textAlign: 'center', letterSpacing: '2px', color: '#D4AF37' }}>TESTIMONIOS</h2>
+      <section id="testimonios" style={{ maxWidth: '1200px', margin: '0 auto', padding: '60px 20px' }}>
+        <h2 style={{ fontSize: '2rem', fontWeight: 'normal', marginBottom: '40px', textAlign: 'center', letterSpacing: '3px', color: '#D4AF37' }}>TESTIMONIOS</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
           {testimonios.map((t, i) => (
-            <div key={i} style={{ padding: '40px 30px', borderRadius: '12px', border: '1px solid #D4AF37', backgroundColor: '#1A1A1A', boxShadow: '0 15px 35px rgba(0,0,0,0.4)' }}>
-              <p style={{ fontSize: '1rem', fontStyle: 'italic', lineHeight: '1.7', marginBottom: '25px', color: '#EAE6DF' }}>"{t.t}"</p>
-              <p style={{ fontSize: '0.85rem', fontWeight: '800', color: '#F3E5AB' }}>- {t.n}</p>
+            <div key={i} style={{ padding: '35px 25px', borderRadius: '4px', border: '1px solid #C5A059', backgroundColor: '#1A1916' }}>
+              <p style={{ fontSize: '0.95rem', fontStyle: 'italic', lineHeight: '1.7', marginBottom: '20px', color: '#D0C8B8' }}>"{t.t}"</p>
+              <p style={{ fontSize: '0.85rem', fontWeight: 'bold', color: '#D4AF37', textAlign: 'right' }}>- {t.n}</p>
             </div>
           ))}
         </div>
       </section>
       
-      {/* SECCIÓN CONTACTO */}
-      <section id="contacto" style={{ 
-        scrollMarginTop: '100px', 
-        maxWidth: '1100px', 
-        margin: '80px auto', 
-        padding: '60px 20px', 
-        display: 'flex', 
-        flexWrap: 'wrap', 
-        alignItems: 'center', 
-        gap: '40px', 
-        justifyContent: 'center' 
-      }}>
+      {/* SECCIÓN CONTACTO / BARRA INFERIOR DE LA TARJETA */}
+      <footer id="contacto" style={{ maxWidth: '1200px', margin: '60px auto 0 auto', padding: '40px 20px 20px 20px' }}>
+        
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '20px', marginBottom: '40px' }}>
+          
+          {/* DATOS DE CONTACTO E ICONOS */}
+          <div style={{ display: 'flex', gap: '30px', alignItems: 'center', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#D4AF37', fontSize: '1.1rem' }}>
+              <span>📞</span>
+              <a href="tel:644267361" style={{ color: '#D4AF37', textDecoration: 'none' }}>644 267 361</a>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#D4AF37', fontSize: '1.1rem' }}>
+              <span>✉️</span>
+              <a href="mailto:mayka.morteroyal@gmail.com" style={{ color: '#D4AF37', textDecoration: 'none' }}>mayka.morteroyal@gmail.com</a>
+            </div>
+          </div>
+
+          {/* QR Y FIRMA */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+            {/* Código QR */}
+            <div style={{ backgroundColor: '#D4AF37', padding: '5px', borderRadius: '4px' }}>
+              <img 
+                src="https://api.qrserver.com/v1/create-qr-code/?size=70x70&data=https://maykamenacho.com" 
+                alt="QR Code" 
+                style={{ width: '60px', height: '60px', display: 'block' }}
+              />
+            </div>
+            {/* Nombre/Firma */}
+            <span style={{ fontSize: '1.5rem', fontFamily: 'cursive', color: '#D4AF37' }}>
+              Mayka Menacho
+            </span>
+          </div>
+
+        </div>
+
+        {/* FRANJA DE LÍNEA DORADA INFERIOR */}
         <div style={{ 
-          flex: '1', 
-          minWidth: '300px', 
-          padding: '40px', 
-          borderRadius: '20px', 
-          border: '1px solid #D4AF37', 
-          backgroundColor: '#1A1A1A',
-          boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
-          position: 'relative',
-          zIndex: 1
-        }}>
-          <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '20px', color: '#D4AF37' }}>Contacto</h2>
-          <p style={{ fontSize: '1rem', lineHeight: '1.8', color: '#EAE6DF' }}>
-            ¿Interesado en comenzar un nuevo proceso conmigo?<br/>
-            Escríbeme directamente a:<br/><br/>
-            <a href="mailto:maykamenacholopez@gmail.com" style={{ 
-              fontWeight: '600', 
-              color: '#F3E5AB',
-              textDecoration: 'underline'
-            }}>
-              maykamenacholopez@gmail.com
-            </a>
-          </p>
-        </div>
+          height: '12px', 
+          width: '100%', 
+          background: 'linear-gradient(90deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%)',
+          borderRadius: '2px',
+          marginBottom: '30px'
+        }}></div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '25px', alignItems: 'center' }}>
-          <a href="https://www.instagram.com/talk_to_mayka/"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" style={{ width: '32px' }} /></a>
-          <a href="https://tiktok.com/conversacionesconmayka"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" style={{ width: '32px' }} /></a>
-          <a href="https://www.youtube.com/@maykamenacho"><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" style={{ width: '35px' }} /></a>
-          <a href="https://wa.me/+34644267361"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: '32px' }} /></a>
-        </div>
-
-        <div style={{ flex: '1', minWidth: '300px', display: 'flex', justifyContent: 'center' }}>
-          <img 
-            src="/images/mayka2.jpg" 
-            alt="Mayka Menacho" 
-            style={{ width: '100%', maxWidth: '380px', borderRadius: '15px', border: '1px solid #D4AF37', boxShadow: '0 10px 30px rgba(212, 175, 55, 0.15)' }} 
-          />
-        </div>
-      </section>
-
-      <footer style={{ padding: '60px 20px', textAlign: 'center', color: '#D4AF37', opacity: 0.7, fontSize: '0.8rem' }}>
-        &copy; 2026 Mayka Menacho
+        <p style={{ textAlign: 'center', color: '#888', fontSize: '0.8rem' }}>
+          &copy; 2026 Mayka Menacho – Certamen Senior & Silver
+        </p>
       </footer>
     </div>
   );
