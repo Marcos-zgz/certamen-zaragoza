@@ -2,11 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'export', // <--- ESTA LÍNEA ES OBLIGATORIA PARA CLOUDFLARE PAGES
+  output: 'standalone', // En Next 13.0.7 usa standalone
   images: {
-    unoptimized: true, // Evita fallos con la optimización de imágenes estáticas
+    unoptimized: true,
   },
-  // Mantengo tus reglas para ignorar errores en el build:
   eslint: {
     ignoreDuringBuilds: true,
   },
