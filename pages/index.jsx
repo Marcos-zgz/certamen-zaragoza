@@ -197,13 +197,13 @@ export default function Home() {
 
 </div>
 
-     {/* PIE DE PÁGINA */}
+  {/* PIE DE PÁGINA */}
         <footer style={{ marginTop: '60px', borderTop: '1px solid #333', paddingTop: '20px', textAlign: 'center' }}>
           <p style={{ color: '#888', fontSize: '0.85rem' }}>
             © 2026 Mayka Menacho – Certamen Senior & Silver
           </p>
         </footer>
 
-      </div> {/* Este div cierra el contenedor principal del return */}
+    
     );
   }
