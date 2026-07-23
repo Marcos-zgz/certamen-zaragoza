@@ -58,7 +58,7 @@ export default function Home() {
 
         {/* SUBTÍTULOS */}
         <h2 style={{ fontSize: '1.4rem', fontWeight: '300', color: '#C5A059', margin: '0 0 5px 0' }}>
-          In Zaragoza, Spain – Organizado por Mayka Menacho
+          En Zaragoza, Spain – Organizado por Mayka Menacho
         </h2>
         <p style={{ fontSize: '1.1rem', color: '#B39250', margin: '0 0 60px 0', fontStyle: 'italic' }}>
           Delegada Regional de Aragón, Navarra y La Rioja
