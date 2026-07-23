@@ -155,16 +155,14 @@ export default function Home() {
             </div>
           </div>
 
-          {/* QR Y FIRMA */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-            {/* Código QR */}
-            <div style={{ backgroundColor: '#D4AF37', padding: '5px', borderRadius: '4px' }}>
-              <img 
-                src="https://api.qrserver.com/v1/create-qr-code/?size=70x70&data=https://maykamenacho.com" 
-                alt="QR Code" 
-                style={{ width: '60px', height: '60px', display: 'block' }}
-              />
-            </div>
+         {/* QR ENMARCADO EN DORADO Y TINTADO */}
+<div style={{ backgroundColor: '#D4AF37', padding: '3px', borderRadius: '4px', display: 'inline-block' }}>
+  <img 
+    src="https://api.qrserver.com/v1/create-qr-code/?size=70x70&data=https://maykamenacho.com&color=131210&bgcolor=D4AF37" 
+    alt="QR Mayka Menacho" 
+    style={{ width: '60px', height: '60px', display: 'block' }} 
+  />
+</div>
             {/* Nombre/Firma */}
             <span style={{ fontSize: '1.5rem', fontFamily: 'cursive', color: '#D4AF37' }}>
               Mayka Menacho
