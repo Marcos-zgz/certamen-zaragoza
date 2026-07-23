@@ -36,13 +36,7 @@ export default function Nav({ logo }) {
     <header className="fixed top-0 left-0 w-full z-[100000] bg-[#131210]/95 backdrop-blur-md border-b border-[#D4AF37]/20">
       <div className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
         
-       {/* LOGO FIRMA */}
-        /* <Link href="/">
-          <span className={norican.className} style={{ fontSize: '1.8rem', color: '#D4AF37', cursor: 'pointer' }}>
-            Mayka Menacho
-          </span>
-        </Link> */ 
-     
+          
         {/* BOTÓN HAMBURGUESA / CERRAR */}
         <button 
           onClick={handleNavOpen} 
