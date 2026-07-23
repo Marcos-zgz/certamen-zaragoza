@@ -33,7 +33,7 @@ export default function Home() {
       <Nav />
 
       {/* CABECERA PRINCIPAL (HERO) */}
-      <header style={{ maxWidth: '1200px', margin: '0 auto', paddingTop: '120px', paddingLeft: '20px', paddingRight: '20px', textAlign: 'center' }}>
+      <header style={{ maxWidth: '1200px', margin: '0 auto', paddingTop: '20px', paddingLeft: '20px', paddingRight: '20px', textAlign: 'center' }}>
         
         {/* CONTENEDOR DE LA CORONA CENTRADA */}
 <div style={{ 
