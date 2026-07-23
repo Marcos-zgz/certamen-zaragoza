@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FORZAMOS EL COLOR ROSA EN TODA LA ESTRUCTURA */
+html, body, #__next, main {
+  background-color: #F5E1D7 !important;
+  background-image: none !important;
+  color: #1A1A1A !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* ESTO ELIMINA EL AZUL DE CUALQUIER SECCIÓN OCULTA */
+section, div, header, footer {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* SI LOS TÍTULOS SIGUEN SALIENDO BLANCOS, LOS PONEMOS OSCUROS */
+h1, h2, h3, p, span, a {
+  color: #1A1A1A !important;
+}

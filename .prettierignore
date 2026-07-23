@@ -1,0 +1,4 @@
+#ignores config files
+next.config.js
+.next
+.vercel
