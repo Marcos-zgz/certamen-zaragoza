@@ -41,7 +41,7 @@ export default function Home() {
   justifyContent: 'center', 
   alignItems: 'center', 
   width: '100%', 
-  marginTop: '80px', // Espacio para que no lo tape la barra superior
+  marginTop: '20px', // Espacio para que no lo tape la barra superior
   marginBottom: '20px' 
 }}>
   <img 
