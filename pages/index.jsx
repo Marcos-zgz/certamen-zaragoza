@@ -78,31 +78,35 @@ export default function Home() {
           Delegada Regional de Aragón, Navarra y La Rioja
         </p>
 
-        {/* SECCIÓN QUIÉNES SOMOS (TEXTO A LA IZQUIERDA + 2 IMÁGENES A LA DERECHA) */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', alignItems: 'center', justifyContent: 'space-between', textAlign: 'left', marginBottom: '80px' }}>
-          
-          <div style={{ flex: '1', minWidth: '300px' }}>
-            <h3 style={{ fontSize: '2rem', color: '#D4AF37', letterSpacing: '2px', marginBottom: '20px', fontWeight: 'normal' }}>
-              QUIÉNES SOMOS
-            </h3>
-            <p style={{ fontSize: '1rem', lineHeight: '1.7', color: '#D0C8B8', marginBottom: '20px' }}>
-              "Libera tu esencia, sana tu historia y diseña el futuro que mereces: Cree, Crea y Crece". Un espacio único diseñado para celebrar la elegancia, la experiencia y la madurez.
-            </p>
-            <p style={{ fontSize: '1rem', lineHeight: '1.7', color: '#D0C8B8' }}>
-              Nuestro certamen reúne el talento y la presencia de candidatos de Aragón, Navarra y La Rioja en un evento inolvidable lleno de distinción.
-            </p>
-          </div>
+      {/* SECCIÓN QUIÉNES SOMOS (TEXTO A LA IZQUIERDA + FOTOS HORIZONTALES COMPLETAS A LA DERECHA) */}
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', alignItems: 'center', justifyContent: 'space-between', textAlign: 'left', marginBottom: '80px' }}>
+  
+  <div style={{ flex: '1', minWidth: '300px' }}>
+    <h3 style={{ fontSize: '2rem', color: '#D4AF37', letterSpacing: '2px', marginBottom: '20px', fontWeight: 'normal' }}>
+      QUIÉNES SOMOS
+    </h3>
+    <p style={{ fontSize: '1rem', lineHeight: '1.7', color: '#D0C8B8', marginBottom: '20px' }}>
+      "Libera tu esencia, sana tu historia y diseña el futuro que mereces: Cree, Crea y Crece". Un espacio único diseñado para celebrar la elegancia, la experiencia y la madurez.
+    </p>
+    <p style={{ fontSize: '1rem', lineHeight: '1.7', color: '#D0C8B8' }}>
+      Nuestro certamen reúne el talento y la presencia de candidatos de Aragón, Navarra y La Rioja en un evento inolvidable lleno de distinción.
+    </p>
+  </div>
 
-          <div style={{ flex: '1', minWidth: '320px', display: 'flex', gap: '20px', justifyContent: 'center' }}>
-            <div style={{ border: '1px solid #C5A059', padding: '4px', borderRadius: '4px' }}>
-              <img src="/images/senior2.jpg" alt="Certamen Pareja" style={{ width: '100%', maxWidth: '220px', height: '260px', objectFit: 'cover' }} />
-            </div>
-            <div style={{ border: '1px solid #C5A059', padding: '4px', borderRadius: '4px' }}>
-              <img src="/images/senior.jpg" alt="Certamen Grupo" style={{ width: '100%', maxWidth: '220px', height: '260px', objectFit: 'cover' }} />
-            </div> 
-          </div>
+  {/* CONTENEDOR DE FOTOS ADAPTADO A FORMATO HORIZONTAL */}
+  <div style={{ flex: '1', minWidth: '320px', display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'center' }}>
+    
+    <div style={{ border: '1px solid #C5A059', padding: '6px', borderRadius: '4px', backgroundColor: '#1A1916', width: '100%', maxWidth: '450px' }}>
+      <img src="/images/senior2.jpg" alt="Certamen Pareja" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '2px' }} />
+    </div>
+    
+    <div style={{ border: '1px solid #C5A059', padding: '6px', borderRadius: '4px', backgroundColor: '#1A1916', width: '100%', maxWidth: '450px' }}>
+      <img src="/images/senior.jpg" alt="Certamen Grupo" style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '2px' }} />
+    </div> 
 
-        </div>
+  </div>
+
+</div>
       </header>
 
       {/* SECCIÓN SERVICIOS */}
