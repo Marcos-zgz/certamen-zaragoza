@@ -35,14 +35,28 @@ export default function Home() {
       {/* CABECERA PRINCIPAL (HERO) */}
       <header style={{ maxWidth: '1200px', margin: '0 auto', paddingTop: '120px', paddingLeft: '20px', paddingRight: '20px', textAlign: 'center' }}>
         
-        {/* CORONA DORA CENTRADA */}
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
-          <img 
-            src="/assets/logocertamen.jpg" 
-            alt="Corona Real" 
-            style={{ width: '180px', height: 'auto', filter: 'drop-shadow(0px 5px 15px rgba(212, 175, 55, 0.4))' }} 
-          />
-        </div>
+        {/* CONTENEDOR DE LA CORONA CENTRADA */}
+<div style={{ 
+  display: 'flex', 
+  justifyContent: 'center', 
+  alignItems: 'center', 
+  width: '100%', 
+  marginTop: '80px', // Espacio para que no lo tape la barra superior
+  marginBottom: '20px' 
+}}>
+  <img 
+    src="/assets/logocertamen.jpg" // O la ruta exacta de la imagen del certamen
+    alt="Certamen Senior & Silver Corona" 
+    style={{ 
+      width: '80%',            // En móviles ocupará el 80% del ancho
+      maxWidth: '350px',       // En pantallas grandes no se hará gigante
+      height: 'auto', 
+      display: 'block',
+      margin: '0 auto',
+      filter: 'drop-shadow(0px 4px 15px rgba(212, 175, 55, 0.3))' // Le da un suave aura brillante dorada
+    }} 
+  />
+</div>
 
         {/* TÍTULO PRINCIPAL EN ORO */}
         <h1 style={{ 
