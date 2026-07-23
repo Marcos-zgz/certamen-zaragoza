@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <div style={{ backgroundColor: '#131210', minHeight: '100vh', color: '#EAE6DF', margin: 0, padding: 0, fontFamily: 'serif', scrollBehavior: 'smooth' }}>
       <Head>
-        <title>Certamen Senior & Silver | Mayka Menacho</title>
+        <title>Certamen Senior & Silver</title>
       </Head>
 
       <Nav />
