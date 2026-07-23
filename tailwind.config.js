@@ -10,9 +10,9 @@ module.exports = {
       maxWidth: {
         xxs: "18rem",
       },
-      // Colores de Mayka (actualizados con la paleta de la tarjeta)
       colors: {
-        nude: "#F5E1D7",
+        // Redirigimos 'nude' al negro para corregir componentes antiguos automáticamente
+        nude: "#111111", 
         carbon: "#1A1A1A",
         // Paleta elegante: Negro, Dorados y Crema
         brand: {
