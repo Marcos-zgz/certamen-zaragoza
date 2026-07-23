@@ -38,27 +38,32 @@ export default function Nav({ logo }) {
         
           
         {/* BOTÓN HAMBURGUESA / CERRAR */}
-        <button 
-          onClick={handleNavOpen} 
-          aria-label="Toggle menu"
-          className="z-[100001] p-2 text-[#D4AF37] focus:outline-none"
-        >
-          {navOpen ? (
-            <span style={{ fontSize: '1.8rem', color: '#D4AF37', fontWeight: 'bold' }}>✕</span>
-          ) : (
-            <Image
-              src="/assets/Menu-Icon.svg"
-              height={40}
-              width={40}
-              alt="menu icon"
-              style={{ filter: 'brightness(0) invert(1)' }} // Hace el icono blanco/dorado
-              onError={(e) => {
-                // Si la imagen falla, muestra las 3 rayas en oro
-                e.target.style.display = 'none';
-              }}
-            />
-          )}
-        </button>
+      <button 
+  onClick={handleNavOpen} 
+  aria-label="Abrir menú"
+  style={{ 
+    backgroundColor: '#131210', 
+    border: '1px solid #D4AF37', 
+    borderRadius: '8px', 
+    padding: '8px 12px', 
+    cursor: 'pointer',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    gap: '5px',
+    zIndex: 100001
+  }}
+>
+  {navOpen ? (
+    <span style={{ color: '#D4AF37', fontSize: '1.4rem', fontWeight: 'bold', lineHeight: '1' }}>✕</span>
+  ) : (
+    <>
+      <span style={{ width: '22px', height: '2px', backgroundColor: '#D4AF37', display: 'block' }}></span>
+      <span style={{ width: '22px', height: '2px', backgroundColor: '#D4AF37', display: 'block' }}></span>
+      <span style={{ width: '22px', height: '2px', backgroundColor: '#D4AF37', display: 'block' }}></span>
+    </>
+  )}
+</button>
 
       </div>
 
