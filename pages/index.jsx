@@ -95,7 +95,7 @@ export default function Home() {
 
           <div style={{ flex: '1', minWidth: '320px', display: 'flex', gap: '20px', justifyContent: 'center' }}>
             <div style={{ border: '1px solid #C5A059', padding: '4px', borderRadius: '4px' }}>
-              <img src="/images/senior2.jpg" alt="Certamen Pareja" style={{ width: '50%', maxWidth: '200px', height: '260px', objectFit: 'cover' }} />
+              <img src="/images/senior2.jpg" alt="Certamen Pareja" style={{ width: '100%', maxWidth: '220px', height: '260px', objectFit: 'cover' }} />
             </div>
             {/*  <div style={{ border: '1px solid #C5A059', padding: '4px', borderRadius: '4px' }}>
               <img src="/images/senior.jpg" alt="Certamen Grupo" style={{ width: '50%', maxWidth: '50px', height: '260px', objectFit: 'cover' }} />
