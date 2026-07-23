@@ -138,48 +138,64 @@ export default function Home() {
         </div>
       </section>
       
-      {/* SECCIÓN CONTACTO / BARRA INFERIOR DE LA TARJETA */}
-      <footer id="contacto" style={{ maxWidth: '1200px', margin: '60px auto 0 auto', padding: '40px 20px 20px 20px' }}>
-        
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '20px', marginBottom: '40px' }}>
-          
-          {/* DATOS DE CONTACTO E ICONOS */}
-          <div style={{ display: 'flex', gap: '30px', alignItems: 'center', flexWrap: 'wrap' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#D4AF37', fontSize: '1.1rem' }}>
-              <span>📞</span>
-              <a href="tel:644267361" style={{ color: '#D4AF37', textDecoration: 'none' }}>644 267 361</a>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#D4AF37', fontSize: '1.1rem' }}>
-              <span>✉️</span>
-              <a href="mailto:maykamenacholopez@gmail.com" style={{ color: '#D4AF37', textDecoration: 'none' }}>maykamenacholopez@gmail.com</a>
-            </div>
-          </div>
+     {/* ESTILOS PARA TEXTO DORADO METÁLICO (Añadir o asegurar en tu CSS/style tag) */}
+<style jsx>{`
+  .gold-metallic-text {
+    background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
+  .gold-metallic-icon {
+    color: #D4AF37;
+    filter: drop-shadow(0px 1px 1px rgba(255, 215, 0, 0.4));
+  }
+`}</style>
 
-      {/* QR EN ORO BRILLANTE (SIN DEFORMACIONES) */}
-<div style={{ display: 'inline-block' }}>
-  <img 
-    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maykamenacho.com" 
-    alt="QR Mayka Menacho" 
-    style={{ 
-      width: '60px', 
-      height: '60px', 
-      display: 'block',
-      // Este filtro invierte los colores y aplica el tono dorado exacto
-      filter: 'invert(72%) sepia(58%) saturate(452%) hue-rotate(5deg) brightness(95%) contrast(88%)'
-    }} 
-  />
+{/* CONTENEDOR CONTACTO Y QR */}
+<div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'flex-start', maxWidth: '100%', padding: '0 10px' }}>
+
+  {/* TELÉFONO */}
+  <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+    <span className="gold-metallic-icon" style={{ fontSize: '1.2rem' }}>📞</span>
+    <a href="tel:644267361" className="gold-metallic-text" style={{ fontSize: '1.1rem', textDecoration: 'none' }}>
+      644 267 361
+    </a>
+  </div>
+
+  {/* EMAIL (CON CONTROL DE DESBORDAMIENTO) */}
+  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', maxWidth: '100%' }}>
+    <span className="gold-metallic-icon" style={{ fontSize: '1.2rem', flexShrink: 0 }}>✉️</span>
+    <a 
+      href="mailto:maykamenacholopez@gmail.com" 
+      className="gold-metallic-text" 
+      style={{ 
+        fontSize: '0.95rem', 
+        textDecoration: 'none',
+        wordBreak: 'break-all', // Rompe el correo de forma limpia si no cabe
+        overflowWrap: 'anywhere'
+      }}
+    >
+      maykamenacholopez@gmail.com
+    </a>
+  </div>
+
+  {/* QR CON FILTRO DORADO METÁLICO */}
+  <div style={{ marginTop: '10px' }}>
+    <img 
+      src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maykamenacho.com" 
+      alt="QR Mayka Menacho" 
+      style={{ 
+        width: '65px', 
+        height: '65px', 
+        display: 'block',
+        // Filtro ajustado para destello metálico cálido
+        filter: 'invert(78%) sepia(62%) saturate(420%) hue-rotate(2deg) brightness(102%) contrast(92%) drop-shadow(0 2px 4px rgba(0,0,0,0.8))'
+      }} 
+    />
+  </div>
+
 </div>
-
-        </div>
-
-        {/* FRANJA DE LÍNEA DORADA INFERIOR */}
-        <div style={{ 
-          height: '12px', 
-          width: '100%', 
-          background: 'linear-gradient(90deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%)',
-          borderRadius: '2px',
-          marginBottom: '30px'
-        }}></div>
 
         <p style={{ textAlign: 'center', color: '#888', fontSize: '0.8rem' }}>
           &copy; 2026 Mayka Menacho – Certamen Senior & Silver
